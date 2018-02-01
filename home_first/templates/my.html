@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %} My list {% endblock %}
+
+{% block content %}
+<h3>Имя: {{ user_name }}</h3><br>
+<h3>Фамилия: {{ user_surname }}</h3><br><h3>Возраст: {{ user_age }}</h3>
+{% endblock %}
+
+{% block my_own_block %}
+    <p>Этот текст виден только на моей странице</p>
+{% endblock %}

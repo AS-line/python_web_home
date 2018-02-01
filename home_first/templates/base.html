@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}  {% endblock %}</title>
+</head>
+<body>
+<a href="/">Home</a>
+<a href="/books/">Книги</a>
+<a href="/my/">Моя страница</a>
+
+<p>--------------Блок контекст:</p>
+{% block content %}
+
+{% endblock %}
+<p>--------------Конец блока content</p>
+
+<p>--------------Начало моего блока</p>
+{% block my_own_block %}
+
+{% endblock %}
+<p>--------------Конец моего блока</p>
+</body>
+</html>
