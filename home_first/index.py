@@ -56,10 +56,5 @@ def contact(phone=None):
     return 'Мой телефон ' + phone
 
 
-@app.route("/my/")
-def my():
-    return render_template("my.html", user_name="Aslan", user_surname="IT", user_age=14)
-#, ,
-
 if __name__ == '__main__':
     app.run(debug=True, port=8001)
