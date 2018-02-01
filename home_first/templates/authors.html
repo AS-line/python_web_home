@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %} Authors {% endblock %}
+
+{% block style %} .color_author{ color: red; } {% endblock %}
+
+{% block content %}
+    {% for author_arr in authors %}
+        {% if author_arr.books_count < 3 %}
+            <h3>Автор: <h3 class="color_author">{{ author_arr.name }}</h3></h3>
+        {% endif %}
+        <h3>Автор:{{ author_arr.name }}</h3>
+        <h3>Книги: {{ author_arr.books_count }}</h3><br>
+    {% endfor %}
+{% endblock %}

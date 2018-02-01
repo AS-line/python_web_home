@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}  {% endblock %}</title>
+    <style type="text/css">{% block style %} {% endblock %}</style>
 </head>
 <body>
 <a href="/">Home</a>
 <a href="/books/">Книги</a>
+<a href="/my/">Моя страница</a>
+<a href="/authors/">Авторы</a>
 
 <p>--------------Блок контекст:</p>
 {% block content %}
